@@ -314,7 +314,7 @@ background-size: cover;">
    <script src="js/bootstrap-datepicker.min.js"></script>
    <script src="js/custom.js"></script>
    <script>
-      fetch("content.t")
+      fetch("content.t?"+new Date().getTime())
          .then(function (res) {
             return res.text();
          })
